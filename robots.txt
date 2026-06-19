@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /MantraSynth/
+
+Sitemap: https://drbaph.is-a.dev/MantraSynth/sitemap.xml
