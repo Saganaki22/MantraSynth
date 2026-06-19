@@ -10,11 +10,12 @@
   "bugs": {
     "url": "https://github.com/Saganaki22/MantraSynth/issues"
   },
-  "homepage": "https://github.com/Saganaki22/MantraSynth#readme",
+  "homepage": "https://drbaph.is-a.dev/MantraSynth/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:pages": "tsc -b && vite build --base=/MantraSynth/",
     "lint": "eslint .",
     "test:basic-pitch": "node scripts/test-basic-pitch.mjs",
     "preview": "vite preview"

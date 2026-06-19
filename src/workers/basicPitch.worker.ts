@@ -14,7 +14,8 @@ import type {
 type OrtModule = typeof import('onnxruntime-web')
 type OrtSession = import('onnxruntime-web').InferenceSession
 
-const MODEL_URL = '/models/basic-pitch/nmp.onnx'
+const publicBaseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`
+const MODEL_URL = new URL(`${publicBaseUrl}models/basic-pitch/nmp.onnx`, self.location.origin).toString()
 const MODEL_CACHE_NAME = 'mantrasynth-basic-pitch-v1'
 
 const SAMPLE_RATE = 22050

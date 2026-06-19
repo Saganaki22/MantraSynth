@@ -4,6 +4,8 @@ MantraSynth is a browser-based vocal/formant synth workstation with an animated 
 
 Repository: https://github.com/Saganaki22/MantraSynth
 
+Live site: https://drbaph.is-a.dev/MantraSynth/
+
 License: Apache-2.0
 
 ## Features
@@ -59,6 +61,16 @@ npm run preview
 ```
 
 The production files are written to `dist/`.
+
+## GitHub Pages
+
+The Pages build uses the project path base `/MantraSynth/` so assets load at `https://drbaph.is-a.dev/MantraSynth/`.
+
+```bash
+npm run build:pages
+```
+
+The workflow in `.github/workflows/pages.yml` deploys `dist/` on pushes to `main`. In the repository settings, set Pages build and deployment source to GitHub Actions.
 
 ## Checks
 
