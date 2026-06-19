@@ -70,7 +70,7 @@ The Pages build uses the project path base `/MantraSynth/` so assets load at `ht
 npm run build:pages
 ```
 
-The workflow in `.github/workflows/pages.yml` deploys `dist/` on pushes to `main`. In the repository settings, set Pages build and deployment source to GitHub Actions.
+The workflow in `.github/workflows/pages.yml` deploys `dist/` to the `gh-pages` branch on pushes to `main`. In the repository settings, set Pages build and deployment source to "Deploy from a branch", then choose `gh-pages` and `/ (root)`.
 
 ## Checks
 
